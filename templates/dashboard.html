@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoT - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Pool of Tools</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/tools">Tools</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
+        <h1>Dashboard</h1>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Tools</h3>
+                <p id="totalTools">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Users</h3>
+                <p id="activeUsers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Recent Activities</h3>
+                <p id="recentActivities">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
